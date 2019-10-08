@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="twitter-search.js"></script>
+        <link rel="stylesheet" type="text/css" href="twitter-search.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="d-flex flex-column align-items-center">
+            <h1 class="p-3">Twitter Hashtag Search</h1>
+            <h6>See the latest 5 tweets with a hashtag of your choice</h6>
+            <div>
+                <input type="text" id="desired-search" name="desired-search" placeholder="which hashtag?">
+                <button>The latest tweets</button>
+            </div>
+            <div>
+                <p class="loading">loading...</p>
+                <ul class="search-results list p-2 list-group">
+    
+                </ul>
+            </div>
+    </body>
+</html>
