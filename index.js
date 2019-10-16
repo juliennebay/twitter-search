@@ -9,10 +9,20 @@ const FILES = {
 
 const requestHandler = (request, response) => {
     console.log(`Request received to: ${request.url}`)
-    const fileName = FILES[path.extname(request.url)] || "index.html"
-    const contentType = `text/${path.extname(request.url).replace(".", "") || "html"}`
+    let contentType
+    let responseContent
+
+    if (request.url.includes("/search")){
+        contentType = "text"
+        responseContent = "search results"
+    }else {
+        const fileName = FILES[path.extname(request.url)] || "index.html"
+        contentType = `text/${path.extname(request.url).replace(".", "") || "html"}`
+        responseContent = fs.readFileSync(`./${fileName}`)
+    }
+
     response.writeHead(200, { 'Content-Type': contentType });
-    response.end(fs.readFileSync(`./${fileName}`), "utf-8")
+    response.end(responseContent, "utf-8")
 }
 
 const server = http.createServer(requestHandler)
