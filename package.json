@@ -1,0 +1,14 @@
+{
+  "name": "twitter-search",
+  "version": "1.0.0",
+  "description": "learning how to interact with twitter API and building a simple HTTP server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
