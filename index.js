@@ -13,8 +13,10 @@ const requestHandler = (request, response) => {
     let responseContent
 
     if (request.url.includes("/search")){
-        contentType = "text"
-        responseContent = "search results"
+        contentType = "application/json"
+        const searchResults = require("./exampleSearchResult.json")
+        responseContent = JSON.stringify(searchResults)
+
     }else {
         const fileName = FILES[path.extname(request.url)] || "index.html"
         contentType = `text/${path.extname(request.url).replace(".", "") || "html"}`
