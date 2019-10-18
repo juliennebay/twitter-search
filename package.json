@@ -9,6 +9,7 @@
   "author": "Ben",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "prettier": "^1.18.2"
   }
 }

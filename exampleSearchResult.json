@@ -15,10 +15,7 @@
             "url": "https://t.co/Rbc9TF2s5X",
             "expanded_url": "https://twitter.com/i/web/status/1125490788736032770",
             "display_url": "twitter.com/i/web/status/1…",
-            "indices": [
-              117,
-              140
-            ]
+            "indices": [117, 140]
           }
         ]
       },
@@ -47,10 +44,7 @@
                 "url": "https://t.co/FGl7VOULyL",
                 "expanded_url": "https://developer.twitter.com/",
                 "display_url": "developer.twitter.com",
-                "indices": [
-                  0,
-                  23
-                ]
+                "indices": [0, 23]
               }
             ]
           },
@@ -60,10 +54,7 @@
                 "url": "https://t.co/mGHnxZU8c1",
                 "expanded_url": "https://twittercommunity.com/",
                 "display_url": "twittercommunity.com",
-                "indices": [
-                  93,
-                  116
-                ]
+                "indices": [93, 116]
               }
             ]
           }
@@ -125,10 +116,7 @@
               "url": "https://t.co/YTqpNZZ8M9",
               "expanded_url": "https://twitter.com/i/web/status/1125479034513645569",
               "display_url": "twitter.com/i/web/status/1…",
-              "indices": [
-                117,
-                140
-              ]
+              "indices": [117, 140]
             }
           ]
         },
@@ -157,10 +145,7 @@
                   "url": "https://t.co/heEvRrl4yN",
                   "expanded_url": "https://help.twitter.com",
                   "display_url": "help.twitter.com",
-                  "indices": [
-                    0,
-                    23
-                  ]
+                  "indices": [0, 23]
                 }
               ]
             },
@@ -232,10 +217,7 @@
         "hashtags": [
           {
             "text": "Pycon2019",
-            "indices": [
-              13,
-              23
-            ]
+            "indices": [13, 23]
           }
         ],
         "symbols": [],
@@ -245,10 +227,7 @@
             "url": "https://t.co/mVLIzEr9Gx",
             "expanded_url": "https://twitter.com/i/web/status/1124690280777699328",
             "display_url": "twitter.com/i/web/status/1…",
-            "indices": [
-              117,
-              140
-            ]
+            "indices": [117, 140]
           }
         ]
       },
@@ -277,10 +256,7 @@
                 "url": "https://t.co/FGl7VOULyL",
                 "expanded_url": "https://developer.twitter.com/",
                 "display_url": "developer.twitter.com",
-                "indices": [
-                  0,
-                  23
-                ]
+                "indices": [0, 23]
               }
             ]
           },
@@ -290,10 +266,7 @@
                 "url": "https://t.co/mGHnxZU8c1",
                 "expanded_url": "https://twittercommunity.com/",
                 "display_url": "twittercommunity.com",
-                "indices": [
-                  93,
-                  116
-                ]
+                "indices": [93, 116]
               }
             ]
           }
