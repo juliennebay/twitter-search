@@ -1,9 +1,13 @@
 function loadScript() {
   const button = document.querySelector("button");
   const ul = document.querySelector("ul");
+  const input = document.querySelector("input");
 
   function search() {
-    const queryUrl = "http://localhost:3000/search";
+    //clear old search results, if any
+    Array.from(ul.children).forEach(item => item.remove());
+
+    const queryUrl = `http://localhost:3000/search?q=${input.value}`;
     fetch(queryUrl)
       .then(response => response.json())
       .then(result => {

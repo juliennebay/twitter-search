@@ -1,3 +1,10 @@
+/*
+What we did:
+1. Prepare creds (getCred function)
+2. Use that function to get token (Authorization: Bearer) - this is done with a POST request
+3. with this token, make a GET request
+*/
+
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
@@ -34,12 +41,14 @@ const requestHandler = (request, response) => {
       },
       body: "grant_type=client_credentials"
     };
+    //the next line is the POST request
     fetch(authUrl, authOptions)
       .then(response => response.json())
       .then(result => {
         const accessToken = result.access_token;
+        const searchTerm = request.url.match(/q=(.*)/)[1];
         const searchUrl =
-          "https://api.twitter.com/1.1/search/tweets.json?q=toronto";
+          "https://api.twitter.com/1.1/search/tweets.json?q=" + searchTerm;
         const searchOptions = {
           headers: {
             Authorization: `Bearer ${accessToken}`
@@ -47,6 +56,7 @@ const requestHandler = (request, response) => {
         };
         //the line below must include the word "return," so that it returns a promise
         // that allows us to chain with `.then` (which will return the search results)
+        //this is the GET request
         return fetch(searchUrl, searchOptions);
       })
       .then(searchResponse => searchResponse.json())
@@ -55,6 +65,7 @@ const requestHandler = (request, response) => {
         response.end(JSON.stringify(searchResult), "utf-8");
       });
   } else {
+    //anytime there is no "/search" in the request, this is what happens
     const fileName = FILES[path.extname(request.url)] || "index.html";
     contentType = `text/${path.extname(request.url).replace(".", "") ||
       "html"}`;
