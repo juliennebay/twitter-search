@@ -16,6 +16,8 @@ const FILES = {
 };
 
 const getCred = () => {
+  //in a production system, we wouldn't hardcode the keys here.
+  //we would use an environment variable.
   const consumerKey = "ITrbDYY3mmlrZ5Adj56F2JSUl";
   const consumerSecret = "1IjSLBtOTl6y1ZGGNX42hhzg23Rr79Rd1LtpyoYscn3V7IrOT6";
   const bearerTokenCred = `${consumerKey}:${consumerSecret}`;
