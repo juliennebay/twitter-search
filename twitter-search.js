@@ -7,7 +7,8 @@ function loadScript() {
     //clear old search results, if any
     Array.from(ul.children).forEach(item => item.remove());
 
-    const queryUrl = `https://sheltered-chamber-27375.herokuapp.com/search?q=${input.value}`;
+    //relative url used here. relative to the domain.
+    const queryUrl = `search?q=${input.value}`;
     fetch(queryUrl)
       .then(response => response.json())
       .then(result => {
