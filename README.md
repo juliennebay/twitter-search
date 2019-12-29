@@ -12,5 +12,8 @@ and returning the result.
 ## Client
 Allows the user to type in a search term, and make a search request to the server.
 
+# How to run it locally
+Start the server with `node index.js`. The server will start at port 3000. Navigate to http://localhost:3000 in the browser. 
+
 # Screenshot
 ![screenshot](https://github.com/juliennebay/twitter-search/blob/master/screenshot.png)
